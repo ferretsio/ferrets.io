@@ -1,0 +1,54 @@
+.landing {
+  background-image: url("/static/images/main_banner.jpg");
+  background-size: cover !important;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 102vh; /* Fallback for browsers that do not support Custom Properties
+  */
+}
+
+.landing h1 {
+  font-size: 8em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 400;
+}
+
+.heading {
+  padding: 10px;
+  margin: 0;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.empty {
+  height: 70vh;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .landing h1 {
+    font-size: 3em;
+  }
+
+  .heading {
+    padding: 5px;
+  }
+  .empty {
+    height: 40vh;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .landing h1 {
+    font-size: 4em;
+  }
+
+  .heading {
+    padding: 8px;
+  }
+}

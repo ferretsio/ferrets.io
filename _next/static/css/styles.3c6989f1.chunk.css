@@ -1,0 +1,203 @@
+.Navbar__navbar__1zO5G b {
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: rgb(27, 24, 24);
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .Navbar__navbar__1zO5G b {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .Navbar__navbar__1zO5G b {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+}
+
+.Landing__landing__2mqVF {
+  background-image: url("/static/images/main_banner.jpg");
+  background-size: cover !important;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 102vh; /* Fallback for browsers that do not support Custom Properties
+  */
+}
+
+.Landing__landing__2mqVF h1 {
+  font-size: 8em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 400;
+}
+
+.Landing__heading__1HAWC {
+  padding: 10px;
+  margin: 0;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.Landing__empty__2SoGu {
+  height: 70vh;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .Landing__landing__2mqVF h1 {
+    font-size: 3em;
+  }
+
+  .Landing__heading__1HAWC {
+    padding: 5px;
+  }
+  .Landing__empty__2SoGu {
+    height: 40vh;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .Landing__landing__2mqVF h1 {
+    font-size: 4em;
+  }
+
+  .Landing__heading__1HAWC {
+    padding: 8px;
+  }
+}
+
+.Portal__portal__2xSp7 {
+  height: 20vh;
+  text-align: center;
+  margin-top: 8.6vh;
+  padding: 30px;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 540px) {
+  .Portal__portal__2xSp7 {
+    margin-top: 15vh;
+    height: 35vh;
+  }
+}
+
+.Pages__what__GUeZS {
+  height: 52vh;
+  text-align: center;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f89358;
+  background-image: linear-gradient(62deg, #f89358 0%, #ffdc3f 100%);
+}
+
+.Pages__concept__3jxi3 {
+  height: 50vh;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.Pages__why__1UnHq {
+  height: 52vh;
+  text-align: center;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pages__technology__3IwPD {
+  height: 50vh;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.When__when__WBYvf {
+  height: 50vh;
+  text-align: center;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: #58abf8;
+  background-image: linear-gradient(62deg, #58abf8 0%, #3fffef 100%);
+}
+
+.When__when__WBYvf h1 {
+  font-weight: bolder;
+  font-size: 4em;
+  font-family: "ROBOTO";
+}
+
+.When__when__WBYvf h2 {
+  font-weight: bolder;
+  font-size: 2.5em;
+  font-family: "ROBOTO";
+  color: white;
+}
+.When__empty__rEikf {
+  height: 200px;
+}
+
+.When__card__31GvJ {
+  height: 15vh;
+  align-items: center;
+}
+
+.When__card__31GvJ h1 {
+  padding-top: 1.8vh;
+  font-weight: bolder;
+  font-size: 4em;
+  font-family: "ROBOTO";
+}
+
+.Who__who__3Es2o {
+  height: 50vh;
+  text-align: center;
+  padding-top: 5%;
+  align-content: center;
+}
+
+.Who__who__3Es2o h1 {
+  margin-bottom: 2%;
+}
+
+.Footer__footer__3AEvT b {
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: rgb(27, 24, 24);
+  padding-left: 10ch;
+  padding-right: 5ch;
+}
+
+.Footer__apps__2KPoX {
+  padding-right: 8ch;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .Footer__footer__3AEvT b {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .Footer__footer__3AEvT b {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+}
+
