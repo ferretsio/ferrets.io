@@ -51780,7 +51780,7 @@ var _jsxFileName = "/Users/pskanade/ferretsio/ferretsio_dev/src/Components/Layou
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
@@ -51815,47 +51815,84 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var Navbar =
+var _default =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Navbar, _Component);
+  _inherits(_default, _Component);
 
-  function Navbar() {
+  function _default() {
     var _getPrototypeOf2;
 
     var _this;
 
-    _classCallCheck(this, Navbar);
+    _classCallCheck(this, _default);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Navbar)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
       activeItem: "home"
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleItemClick", function (e, _ref) {
-      var name = _ref.name;
-      return _this.setState({
-        activeItem: name
-      });
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "menuItems", [{
+      itemName: "what",
+      itemTag: "What"
+    }, {
+      itemName: "why",
+      itemTag: "Why"
+    }, {
+      itemName: "when",
+      itemTag: "When"
+    }, {
+      itemName: "who",
+      itemTag: "Who"
+    }]);
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "renderMenuItem", function (itemName, itemTag, activeItem) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
+        name: itemName,
+        active: activeItem === itemName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+        to: itemName,
+        spy: true,
+        smooth: true,
+        duration: 700,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, itemTag)));
     });
 
     return _this;
   }
 
-  _createClass(Navbar, [{
+  _createClass(_default, [{
     key: "render",
     value: function render() {
-      var activeItem = this.state.activeItem;
+      var _this2 = this;
+
+      var activeItem = "home";
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _static_css_Navbar_css__WEBPACK_IMPORTED_MODULE_2___default.a.navbar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
@@ -51863,151 +51900,23 @@ function (_Component) {
         fixed: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 52
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-        name: "home",
-        active: activeItem === "home",
-        onClick: this.handleItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "home",
-        spy: true,
-        smooth: true,
-        duration: 700,
-        id: "sclink",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, "ferrets.io"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Menu, {
+      }, this.renderMenuItem("home", "ferrets.io", activeItem), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Menu, {
         position: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 54
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-        name: "what",
-        active: activeItem === "what",
-        onClick: this.handleItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "what",
-        spy: true,
-        smooth: true,
-        duration: 700,
-        id: "sclink",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, "What"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-        name: "why",
-        active: activeItem === "why",
-        onClick: this.handleItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "why",
-        spy: true,
-        smooth: true,
-        duration: 700,
-        id: "sclink",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }, "Why"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-        name: "When",
-        active: activeItem === "When",
-        onClick: this.handleItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "when",
-        spy: true,
-        smooth: true,
-        duration: 700,
-        id: "sclink",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75
-        },
-        __self: this
-      }, "When"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-        name: "Who",
-        active: activeItem === "Who",
-        onClick: this.handleItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "who",
-        spy: true,
-        smooth: true,
-        duration: 700,
-        id: "sclink",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 83
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 90
-        },
-        __self: this
-      }, "Who"))))));
+      }, this.menuItems.map(function (mItem) {
+        return _this2.renderMenuItem(mItem.itemName, mItem.itemTag, activeItem);
+      }))));
     }
   }]);
 
-  return Navbar;
+  return _default;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
